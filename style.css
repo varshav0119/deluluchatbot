@@ -1,0 +1,102 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+body {
+  background-color: black;
+}
+
+h1 {
+  font-family: "Dancing Script";
+  color: #FF0080;
+  font-size: 70px;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  width: 400px;
+  padding: 50px;
+  border-radius: 30px;
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+}
+
+.container>* {
+  margin-bottom: 40px;
+}
+
+#sparkles {
+  z-index: -1;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/015/674/915/original/shiny-glitter-clipart-png.png");
+  background-repeat: repeat;
+  background-size: 400px;
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: inline;
+  animation: sparkling 3s infinite;
+}
+
+@keyframes sparkling {
+  0% {
+    filter: opacity(0);
+  }
+
+  50% {
+    filter: opacity(0.75);
+  }
+
+  100% {
+    filter: opacity(0);
+  }
+}
+
+#target {
+  min-height: 120px;
+  font-family: "Dancing Script";
+  font-size: 30px;
+}
+
+#ball {
+  height: 170px;
+  display: none;
+}
+
+#question {
+  padding: 10px;
+  border: 2px solid #FF0080;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  color: #FF0080;
+  background-color: black;
+  font-size: 18px;
+  overflow-x: none;
+}
+
+#submit {
+  padding: 15px;
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+  border-radius: 20px;
+  border: none;
+  font-size: 30px;
+  font-family: "Dancing Script";
+}
+
+.cage {
+  min-height: 200px;
+  max-height: 200px;
+}
